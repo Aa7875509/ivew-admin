@@ -28,12 +28,14 @@ function tranform (table, aId, name) {
         while (i < len) {
             if (i === -1) {
                 Array.from(tableHead.rows[0].children).forEach((td) => {
+                    console.log(td)
                     tableInnerHTML = tableInnerHTML + '<th>' + td.children[0].children[0].innerHTML + '</th>';
                 });
                 tableInnerHTML += '</tr><thead><tbody>';
             } else {
                 tableInnerHTML += '<tr>';
                 Array.from(tableBody.rows[i].children).forEach((td) => {
+                    console.log(td)
                     tableInnerHTML = tableInnerHTML + '<td>' + td.children[0].children[0].innerHTML + '</td>';
                 });
                 tableInnerHTML += '</tr>';

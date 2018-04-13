@@ -54,7 +54,7 @@
                         <Table :columns="excelColumns" height="390px" :data="table2excelData" size="small" ref="tableExcel"></Table>
                     </Col>
                     <Col span='6' class="padding-left-10">
-                         <div class="margin-top-10 margin-left-10">
+                        <div class="margin-top-10 margin-left-10">
                             <span>输入文件名：</span>
                             <Input v-model="excelFileName" icon="document" placeholder="请输入文件名" style="width: 190px" />
                         </div>
